@@ -7,7 +7,7 @@ This project is my attempt at creating automated path lights that can light up w
 ### Indoors controller
 
 # Artifacts
-- [The controller software design.](https://github.com/RazMake/PathLights/blob/master/Code/Controller/DevDesign.md)
+- [The controller software design notes.](https://github.com/RazMake/PathLights/blob/master/Code/Controller/DevDesign.md)
 
 
 # Some Photos
