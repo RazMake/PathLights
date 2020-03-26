@@ -26,8 +26,11 @@ The controller must be able to check the status of each light.
 # Implementation details
 ## Controller REST APIs
 These APIs are the way to send comands to the controller. From a phone app, or from the home automation hub.  
+
 I need the following APIs to cover the desired functionality:
 - **SetProgram**. This is a ***POST*** used for sending a program of lights.  
+  This command will distribute the program to each light (according to the input data), and only return when it is done doing that.  
+  Running this command will pause everything else the controller is doing until it completes.  
   For each light, an array of color, brightness and duration  is sent.  
   The settings for multiple lights can be combined (when they're the same). The settings are executed in the order they were received, by each light.  
   The program must have the following properties specified:  
@@ -41,15 +44,16 @@ I need the following APIs to cover the desired functionality:
 	  The beat will be maintained by the controller, who is sending a broadcast signal to all lights to keep the program in sync.
   - **lightCommands** (array of complex type: *lightCommand*). This is the actual set of commands in sequence to be executed by the lights.  
   Each *lightCommand* instance has the following properties:
-    - **lights** (ushort[]). This is the list of light ids for which the command data applies.
+    - **lights** (ushort[]). This is the list of light locations for which the command data applies.
     - **r** (byte). This is the red color value in "RGB" (participates in determining the color of the light).
     - **g** (byte). This is the green color value in "RGB" (participates in determining the color of the light).
     - **b** (byte). This is the blue color value in "RGB" (participates in determining the color of the light).
     - **intensity** (byte). The intensity of the light when turned on (how bright is it: ***0** - light is off, **255** - light is on at full power*).
     - **beats** (ushort). This indicates how many beats will the specified settings last.  
     Basically the light will keep the settings in the command for this many *'beats'* from controller, after which it will move to the next command.
-- **Switch**. This is a ***GET*** used to turn on or off the lights (according to the program that was uploaded last).
-  This is a GET request with a single parameter, that indicates the desired action:
+- **Switch**. This is a ***GET*** used to turn on or off the lights (according to the program that was uploaded last).  
+  This command is returning immediately after setting up the program. It does not wait for the transition program (if any is defined) to end.  
+  This is a GET request with a single parameter (**status**), that indicates the desired action:
 	- ***1*** - Turn the lights on.  
 	 This means the controller turns the power **on** to the lights, then start sending the beat for *on animation* (if one was set),  
 	 then switches to te beat for *normal light on* program and returns success to the caller.
@@ -57,5 +61,27 @@ I need the following APIs to cover the desired functionality:
 	This means the controller switches starts sending the beat for *off animation* (if one was set),
 	then it switches the power off for the lights and returns success to the caller.
 - **CheckStatus**. This is a ***GET*** used to get the status information from each light.
-  This is a GET
-- **ConfigureLights**. This is a ***GET*** used to put the controller in a mode where a new light can be connected outside.
+  This command will query each light for status and return an aggregated view of status for all lights.  
+  Running this command will pause everything else the controller is doing until it completes.
+- **Setup**. This is a ***GET*** used to put the controller in a mode where a new light can be connected outside.  
+  This command puts the controller in a special mode where it starts listening for a new light to be added, and gives them a unique Id.  
+  Running the command will cancel any other activity the controller is doing, and switch the controller to be a slave I2C device with address 0x1.  
+  When an unconfigured light is powered on, it is behaving like an I2C master device, and it looks to talk to the slave at address 0x1 (always).  
+  Once the controller responds with the information needed the light switches back to normal (slave) mode I2C device with the ID provided by the
+  controller in the previous step.
+  Once the master provided all the information it has for the light being connected it switches back to its normal functionality.
+  This is a GET with a single parameter (**lightLocation**) which indicates which light is being added.  
+  The light location value is a number, wich specifies the physical location of the light on the driveway.
+  The consumer must define a map with where the lights are (which solely depends on his/her configuration of lights placement).  
+  For example, a consumer with 10 lights placed evenly on the sides of the driveway, could define the locations like this:
+  ```
+     +-----+    1          2          3          4          5 
+     |     |    ===============================================
+	 |House|                    Drive way
+	 |     |    ===============================================
+	 +-----+    10         9          8          7          6
+  ```
+  This allows the user the ability to specify programs that light up various lights at different times to obtain interesting effects.
+  Again, for simplicity of setup the numbers that identify the location of the light do not necesarely have to map to the I2C id of the respective light.
+  The controller keeps a map and converts the location to the correct I2C id.
+  All the programs address the lights by their location, not by the I2C id.
