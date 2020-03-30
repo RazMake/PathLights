@@ -26,7 +26,7 @@ SET certificateAuthorityName=%2
 ::     C = countryName (example, "C=US")
 SET password=%3
 
-:: Create the files defining the certificate authority
+:: Create the files defining the certificate authority:
 	makecert.exe ^
 		-n "CN=%certificateAuthorityName%" ^
 		-r ^
@@ -37,7 +37,8 @@ SET password=%3
 		-sv %fileName%.pvk ^
 		%fileName%.cer
 
-:: Then take the private key file (*.pvk) and the certificate file (*.cer) and generate a Personal Information Exchange (*.pfx) file containing them
+:: Then take the private key file (*.pvk) and the certificate file (*.cer) and generate a
+::    Personal Information Exchange (*.pfx) file containing them:
 	pvk2pfx.exe ^
 		-pvk %fileName%.pvk ^
 		-spc %fileName%.cer ^
