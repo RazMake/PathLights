@@ -19,4 +19,9 @@ I will power the lights with 12V so the LEDs have the needed voltage, and I will
 
 # Hardware
 ## First consideration is the power converter.
-Texas instruments has [a web tool](https://webench.ti.com/power-designer/switching-regulator) that provides standard schematics, using their power converter chips, based on specific requirements. Since I know almost nothing about electronic circuits, I'm not picky, I ust used the tool to get the schematic and necessary components for the power converter.
+Texas instruments has [a web tool](https://webench.ti.com/power-designer/switching-regulator) that provides standard schematics, using their power converter chips, based on specific requirements. Since I know almost nothing about electronic circuits, I'm not picky, I ust used the tool to get the schematic and necessary components for the power converter.  
+I picked the following schematic from the list of 400 or so that matched (looking for a small footprint and low cost, with low cost being the stronger criteria since I need to make ~40 units):  
+![Original Schematic](Images/PowerSchematic.png)  
+And the characteristics of this circuit look like this:  
+![Circuit Characteristics](Images/PowerCircuitCharacteristics.png)  
+
