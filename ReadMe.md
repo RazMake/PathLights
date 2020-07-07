@@ -24,4 +24,5 @@ I picked the following schematic from the list of 400 or so that matched (lookin
 ![Original Schematic](Images/PowerSchematic.png)  
 And the characteristics of this circuit look like this:  
 ![Circuit Characteristics](Images/PowerCircuitCharacteristics.png)  
-
+I have also preserved the original BOM (produced by TI's web tool) [**here**](Hardware/BOM_TPS563249DDC.csv).  
+***Also very important information is the datasheet of the chip used ([TPS 563249](Hardware/DataSheet_TPS563249.pdf))**, preserved in the repo so I don't need to keep finding it.*
