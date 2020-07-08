@@ -1,0 +1,207 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:TPS563200 U?
+U 1 1 5F04A079
+P 5350 3800
+F 0 "U?" H 5350 4167 50  0000 C CNN
+F 1 "TPS563200" H 5350 4076 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5400 3550 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps563200.pdf" H 5350 3800 50  0001 C CNN
+	1    5350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5F04B4EC
+P 3900 3700
+F 0 "J?" H 4008 3881 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 4008 3790 50  0000 C CNN
+F 2 "" H 3900 3700 50  0001 C CNN
+F 3 "~" H 3900 3700 50  0001 C CNN
+	1    3900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3700 4900 3700
+$Comp
+L Device:R R?
+U 1 1 5F04CA6A
+P 6550 4150
+F 0 "R?" H 6620 4196 50  0000 L CNN
+F 1 "R" H 6620 4105 50  0000 L CNN
+F 2 "" V 6480 4150 50  0001 C CNN
+F 3 "~" H 6550 4150 50  0001 C CNN
+	1    6550 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F04D29E
+P 6550 3750
+F 0 "R?" H 6620 3796 50  0000 L CNN
+F 1 "R" H 6620 3705 50  0000 L CNN
+F 2 "" V 6480 3750 50  0001 C CNN
+F 3 "~" H 6550 3750 50  0001 C CNN
+	1    6550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5F04DA63
+P 6200 3600
+F 0 "L?" V 6019 3600 50  0000 C CNN
+F 1 "L" V 6110 3600 50  0000 C CNN
+F 2 "" H 6200 3600 50  0001 C CNN
+F 3 "~" H 6200 3600 50  0001 C CNN
+	1    6200 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F04E46D
+P 5950 3250
+F 0 "C?" H 6065 3296 50  0000 L CNN
+F 1 "C" H 6065 3205 50  0000 L CNN
+F 2 "" H 5988 3100 50  0001 C CNN
+F 3 "~" H 5950 3250 50  0001 C CNN
+	1    5950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F04EE91
+P 4400 3900
+F 0 "C?" H 4515 3946 50  0000 L CNN
+F 1 "C" H 4515 3855 50  0000 L CNN
+F 2 "" H 4438 3750 50  0001 C CNN
+F 3 "~" H 4400 3900 50  0001 C CNN
+	1    4400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F04FB91
+P 4700 4100
+F 0 "C?" H 4815 4146 50  0000 L CNN
+F 1 "C" H 4815 4055 50  0000 L CNN
+F 2 "" H 4738 3950 50  0001 C CNN
+F 3 "~" H 4700 4100 50  0001 C CNN
+	1    4700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3900 4900 3900
+Wire Wire Line
+	4900 3900 4900 3700
+Connection ~ 4900 3700
+Wire Wire Line
+	4900 3700 4700 3700
+Wire Wire Line
+	4700 3950 4700 3700
+Connection ~ 4700 3700
+Wire Wire Line
+	4700 3700 4400 3700
+Wire Wire Line
+	4400 3750 4400 3700
+Connection ~ 4400 3700
+Wire Wire Line
+	4400 3700 4100 3700
+Wire Wire Line
+	5550 3900 5750 3900
+Wire Wire Line
+	6550 3900 6550 4000
+Connection ~ 6550 3900
+Wire Wire Line
+	5750 3800 5950 3800
+Wire Wire Line
+	5950 3800 5950 3400
+Wire Wire Line
+	6350 3600 6550 3600
+Wire Wire Line
+	5950 3100 5750 3100
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5F0532CB
+P 7550 4000
+F 0 "J?" H 7550 4050 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7650 4150 50  0000 R CNN
+F 2 "" H 7550 4000 50  0001 C CNN
+F 3 "~" H 7550 4000 50  0001 C CNN
+	1    7550 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7350 4000 7350 4300
+Wire Wire Line
+	7350 4300 6900 4300
+Wire Wire Line
+	6550 4300 5350 4300
+Wire Wire Line
+	5350 4300 5350 4100
+Connection ~ 6550 4300
+Wire Wire Line
+	4700 4300 4700 4250
+Wire Wire Line
+	4700 4300 4400 4300
+Wire Wire Line
+	4400 4300 4400 4050
+Wire Wire Line
+	4400 4300 4100 4300
+Wire Wire Line
+	4100 4300 4100 3800
+Connection ~ 4400 4300
+$Comp
+L Device:C C?
+U 1 1 5F056569
+P 6900 3950
+F 0 "C?" H 7015 3996 50  0000 L CNN
+F 1 "C" H 7015 3905 50  0000 L CNN
+F 2 "" H 6938 3800 50  0001 C CNN
+F 3 "~" H 6900 3950 50  0001 C CNN
+	1    6900 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 3900
+Wire Wire Line
+	5750 3900 6550 3900
+Wire Wire Line
+	5750 3100 5750 3600
+Wire Wire Line
+	6050 3600 5750 3600
+Connection ~ 5750 3600
+Wire Wire Line
+	5750 3600 5750 3700
+Wire Wire Line
+	5350 4300 4700 4300
+Connection ~ 5350 4300
+Connection ~ 4700 4300
+Wire Wire Line
+	6900 4100 6900 4300
+Connection ~ 6900 4300
+Wire Wire Line
+	6900 4300 6550 4300
+Wire Wire Line
+	6900 3800 6900 3600
+Wire Wire Line
+	6900 3600 6550 3600
+Connection ~ 6550 3600
+Wire Wire Line
+	6900 3600 7350 3600
+Wire Wire Line
+	7350 3600 7350 3900
+Connection ~ 6900 3600
+$EndSCHEMATC

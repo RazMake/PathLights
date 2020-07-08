@@ -1,0 +1,13 @@
+﻿Part,Manufacturer,Part Number,Quantity,Price ($),Footprint (mm²),Description
+Rpg,Vishay-Dale,CRCW0402100KFKED,1,0.01,3,Resistance: 100 kΩ  Tolerance: 1.0%  Power: 63 mW  
+L1,Coilcraft,MLC1565-133MLB,1,1.05,243.2,L: 13 µH  DCR: 12.6 mΩ  IDC: 6.7 A  
+Cinx,TDK,C2012X7R1H224K125AA,1,0.03,6.75,Cap: 220 nF  Total Derated Cap: 220 nF  VDC: 50 V  ESR: 16.95 mΩ  Package: 0805  
+Cout,TDK,C3225X7S0J476M250AC,1,0.29,14.7,Cap: 47 µF  Total Derated Cap: 38 µF  VDC: 6.3 V  ESR: 1 mΩ  Package: 1210  
+Cin,TDK,C2012X7R1V475K125AC,1,0.18,6.75,Cap: 4.7 µF  Total Derated Cap: 3 µF  VDC: 35 V  ESR: 2.35 mΩ  Package: 0805  
+U1,Texas Instruments,LMR33610ADDAR,1,0.6,55.2,
+Cvcc,Kemet,C0603C105K8PACTU,1,0.01,4.68,Cap: 1 µF  Total Derated Cap: 1 µF  VDC: 10 V  ESR: 1 mΩ  Package: 0603  
+Cboot,MuRata,GRM155R71C104KA88D,1,0.01,3,Cap: 100 nF  Total Derated Cap: 100 nF  VDC: 16 V  ESR: 1 mΩ  Package: 0402  
+Coutx,MuRata,GRM188R71C104KA01D,1,0.01,4.68,Cap: 100 nF  Total Derated Cap: 100 nF  VDC: 16 V  ESR: 30 mΩ  Package: 0603  
+Rfbt,Vishay-Dale,CRCW0402100KFKED,1,0.01,3,Resistance: 100 kΩ  Tolerance: 1.0%  Power: 63 mW  
+Rfbb,Vishay-Dale,CRCW040243K2FKED,1,0.01,3,Resistance: 43.2 kΩ  Tolerance: 1.0%  Power: 63 mW  
+Cff,TDK,CGA1A2C0G1E330J030BA,1,0.01,2.08,Cap: 33 pF  Total Derated Cap: 33 pF  VDC: 25 V  ESR: 0 Ω  Package: 0201  

@@ -20,9 +20,9 @@ I will power the lights with 12V so the LEDs have the needed voltage, and I will
 # Hardware
 ## First consideration is the power converter.
 Texas instruments has [a web tool](https://webench.ti.com/power-designer/switching-regulator) that provides standard schematics, using their power converter chips, based on specific requirements. Since I know almost nothing about electronic circuits, I'm not picky, I ust used the tool to get the schematic and necessary components for the power converter.  
-I picked the following schematic from the list of 400 or so that matched (looking for a small footprint and low cost, with low cost being the stronger criteria since I need to make ~40 units):  
+Thinking that the lights would have to last/work under summer's heat, I thght that mabe the best criteria for choosing a schematic is to have it as efficient as possible, while reasonable priced.  
 ![Original Schematic](Images/PowerSchematic.png)  
 And the characteristics of this circuit look like this:  
 ![Circuit Characteristics](Images/PowerCircuitCharacteristics.png)  
-I have also preserved the original BOM (produced by TI's web tool) [**here**](Hardware/BOM_TPS563249DDC.csv).  
-***Also very important information is the datasheet of the chip used ([TPS 563249](Hardware/DataSheet_TPS563249.pdf))**, preserved in the repo so I don't need to keep finding it.*
+I have also preserved the original BOM (produced by TI's web tool) [**here**](Hardware/BOM.csv).  
+***Also very important information is the datasheet of the chip used ([LMR33610](Hardware/LMR33610_Data_Sheet.pdf))**, preserved in the repo so I don't need to keep finding it.*
