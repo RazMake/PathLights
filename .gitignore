@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# Files produced by KiCAD that are not essential.
+*.sch-bak
