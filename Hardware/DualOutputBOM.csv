@@ -1,0 +1,18 @@
+COUNT,RefDes,Value,Description,Size,Part Number,Mfr
+2,"C10,C11",0.1uF,"Capacitor, Ceramic, 50V, X7R, 10%",603,STD,STD
+2,"C100, C101",220pF,"Capacitor, Ceramic, 50V, X7R, 10%",603,STD,STD
+1,C2,22uF,"Capacitor, Ceramic, 16V, X5R",1210,Std,Std
+4,"C3, C6, C102, C105",22uF,"Capacitor, Ceramic, 6.3V, X5R",805,Std,Std
+2,"C4, C5",0.033uF,"Capacitor, Ceramic, 50V, X7R, 10%",603,STD,STD
+1,C7,4.7uF,"Capacitor, Ceramic, 6.3V, X7R, 15%",603,STD,STD
+2,"D1, D2",MBRS320,"Diode, Schottky, 3-A, 20-V",DO-201AD,MBRS320,On Semi
+3,"J1, J2, J3",D120/2DS,"Terminal Block, 2-pin, 15-A, 5.1mm",0.40 x 0.35 inch,D120/2DS,OST
+2,"L1, L2",15uH,"Inductor, SMT, 3.5A, 41milliohm",0.402 x 0.394 inch,MSS1048-153ML,Coilcraft
+2,"R1, R2",49.9,"Resistor, Chip, 1/16W, 1%",603,Std,Std
+1,R10,3.16k,"Resistor, Chip, 1/16W, 1%",603,Std,Std
+2,"R3, R4",10k,"Resistor, Chip, 1/16W, 1%",603,Std,Std
+2,"R7, R8",499,"Resistor, Chip, 1/16W, 1%",603,Std,Std
+1,R9,1.91k,"Resistor, Chip, 1/16W, 1%",603,Std,Std
+4,"TP3, TP6, TP9, TP10",5000,"Test Point, Red, Thru Hole Color Keyed",0.100 x 0.100 inch,5000,Keystone
+2,"TP7, TP8",5001,"Test Point, Black, Thru Hole Color Keyed",0.100 x 0.100 inch,5001,Keystone
+1,U1,TPS54383PWP,"IC, 3A, 300KHz Dual Converter",HTSSOP-14,TPS54383PWP,TI
