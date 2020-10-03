@@ -1,4 +1,4 @@
-# Light power source
+# **Light power source**
 According to the original plan I burried 4 wires in the ground. When I decided to use ESPs for controlling the lights and have them communicate over WiFi, the two data lines remained unused.  
 I am preserving them as backup:
 - if any of the power lines is interrupted, I can use one ofthe old data lines to replace it
@@ -20,7 +20,7 @@ So my light circuit will need to receive multiple voltages:
 I will use a power source that outputs 12V DC and it is capable of providing at least 3A to power all the lights and their controllers (meaning 36W). I found a reasonable [power source](https://www.holidaycoro.com/12-Volt-350-Watt-Power-Supply-p/49.htm) that can deliver 350W (*~$21 in 2020*).
 So in each light I would need a dual output buck converter that gives me both 3.3V and 5V at the same time.
 
-# Light power source
+# Design
 As far as I can tell there are three options for my situation:
 1. A single converter that has two outputs (for the two voltages I need)
 2. Or two separate buck converters from 12V to 3.3V and respectively 5V
@@ -58,7 +58,7 @@ A possible charge pump circuit is **TPS60150** ([data sheet](https://www.ti.com/
 The schema seems simple enough and with few components:  
 ![Sample Schematic](Images/ChargePumpSchematic.png)  
 This is cool because it does not use an inductor, which are tipically large components.  
-It does have a low output current (only 140mA), so I need to make sure this is enough for the level shifter. 
+hIt does have a low output current (only 140mA), so I need to make sure this is enough for the level shifter. 
 
 ## Conclusion
 TBD
