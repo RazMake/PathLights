@@ -14,9 +14,156 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 8750 900  2150 1550
+S 6500 3700 2150 1550
 U 5F049D3F
 F0 "Light Controller Power Module" 79
 F1 "LightControllerPower.sch" 79
+F2 "VCC(+3.3V)" O L 6500 4800 50 
+F3 "GND" O L 6500 4250 50 
+F4 "VCC(+12V)" I R 8650 4250 50 
+F5 "GND" I R 8650 4750 50 
 $EndSheet
+$Comp
+L RF_Module:ESP32-WROOM-32 U1
+U 1 1 5F1685CE
+P 3650 4700
+F 0 "U1" H 3650 6281 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 3650 6190 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 3650 3200 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 3350 4750 50  0001 C CNN
+	1    3650 4700
+	0    -1   -1   0   
+$EndComp
+Text Notes 7050 7000 0    177  ~ 35
+Light Controller Board
+NoConn ~ 4750 4100
+NoConn ~ 4650 4100
+NoConn ~ 4550 4100
+NoConn ~ 4450 4100
+NoConn ~ 4350 4100
+NoConn ~ 4250 4100
+NoConn ~ 4150 4100
+NoConn ~ 4050 4100
+NoConn ~ 3950 4100
+NoConn ~ 3850 4100
+NoConn ~ 3750 4100
+NoConn ~ 3650 4100
+NoConn ~ 3550 4100
+NoConn ~ 3450 4100
+NoConn ~ 3350 4100
+NoConn ~ 3250 4100
+NoConn ~ 3150 4100
+NoConn ~ 3050 4100
+NoConn ~ 2950 4100
+NoConn ~ 2850 4100
+NoConn ~ 2650 4100
+NoConn ~ 2650 5300
+NoConn ~ 2750 5300
+NoConn ~ 3650 5300
+NoConn ~ 3750 5300
+NoConn ~ 3850 5300
+NoConn ~ 3950 5300
+NoConn ~ 4050 5300
+NoConn ~ 4150 5300
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 5F6E1F02
+P 8150 1150
+F 0 "J2" V 8212 1294 50  0000 L CNN
+F 1 "LED" V 8303 1294 50  0000 L CNN
+F 2 "" H 8150 1150 50  0001 C CNN
+F 3 "~" H 8150 1150 50  0001 C CNN
+	1    8150 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5F6E6CC9
+P 9550 4500
+F 0 "J1" H 9450 4550 50  0000 L CNN
+F 1 "MAIN POWER" H 9100 4650 50  0000 L CNN
+F 2 "" H 9550 4500 50  0001 C CNN
+F 3 "~" H 9550 4500 50  0001 C CNN
+	1    9550 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9350 4500 9200 4500
+Wire Wire Line
+	9200 4500 9200 4750
+Wire Wire Line
+	9200 4750 8950 4750
+Wire Wire Line
+	9350 4400 9200 4400
+Wire Wire Line
+	9200 4400 9200 4250
+Wire Wire Line
+	9200 4250 8650 4250
+Wire Wire Line
+	9200 4250 9200 1350
+Wire Wire Line
+	9200 1350 8250 1350
+Connection ~ 9200 4250
+Wire Wire Line
+	8950 4750 8950 1500
+Wire Wire Line
+	8950 1500 8150 1500
+Wire Wire Line
+	8150 1500 8150 1350
+Connection ~ 8950 4750
+Wire Wire Line
+	8950 4750 8650 4750
+Wire Wire Line
+	2750 4100 2750 2000
+Wire Wire Line
+	2750 2000 6200 2000
+Wire Wire Line
+	6200 2000 6200 1300
+Wire Wire Line
+	2550 4100 2550 1800
+Wire Wire Line
+	2550 1800 6100 1800
+Wire Wire Line
+	6100 1800 6100 1300
+Wire Wire Line
+	2450 5300 2450 5400
+Wire Wire Line
+	2450 5400 1800 5400
+Wire Wire Line
+	1800 5400 1800 1600
+Wire Wire Line
+	1800 1600 6000 1600
+Wire Wire Line
+	6000 1600 6000 1300
+Wire Wire Line
+	6500 4250 5650 4250
+Wire Wire Line
+	5650 4250 5650 4700
+Wire Wire Line
+	5650 4700 5050 4700
+Wire Wire Line
+	2250 4700 2250 5600
+Wire Wire Line
+	2250 5600 5650 5600
+Wire Wire Line
+	5650 5600 5650 4800
+Wire Wire Line
+	5650 4800 6500 4800
+Wire Wire Line
+	2450 4100 2450 2250
+Wire Wire Line
+	2450 2250 8050 2250
+Wire Wire Line
+	8050 2250 8050 1350
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 5F70390C
+P 6100 1100
+F 0 "J3" V 6162 1244 50  0000 L CNN
+F 1 "FLASH" V 6253 1244 50  0000 L CNN
+F 2 "" H 6100 1100 50  0001 C CNN
+F 3 "~" H 6100 1100 50  0001 C CNN
+	1    6100 1100
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

@@ -1,9 +1,9 @@
 # Project History
 I wanted to add some path lights to my driveway for a long time, so when the opportunity presented to get some help digging the trenches, I decided to jump in.  
 I admit I did not thorrowly think this through, as I don't know much about electronics.
-I am a software developer, but I don't know C++ very well and that is what you need to write the firmware for the lights.
+I am a software developer, but I don't know C++ very well (yet).
 So naturaly decided to go all in and try to build them myself from scratch, right? That is what you do when you have no ideea how to build soemthing. After all, paraphrasing my favorite manager of all time: How hard can it ***posibly*** be?  
-Lukly I have a friend who knows a lot more about electronics than I do and he is willing to help out so I'll give it a shot.
+Lukly I have a friend who knows a lot more about electronics than I do and he was willing to help out so I'll give it a shot.
 
 # High level plan
 Like I said, I ended up burying the cables before I had a fully formed plan. The initial ideea was that I would use a two wire protocol to comunicate between the controller and the lights. So I buried 4 wire cable:  
@@ -18,11 +18,15 @@ ESP32s also have bluetooth functionality which could be used to add interesting 
 I will power the lights with 12V so the LEDs have the needed voltage, and I will use a buck converter to drop that to the 3.3V required by the ESP chip.
 
 # Hardware
-## First consideration is the power converter.
-Texas instruments has [a web tool](https://webench.ti.com/power-designer/switching-regulator) that provides standard schematics, using their power converter chips, based on specific requirements. Since I know almost nothing about electronic circuits, I'm not picky, I ust used the tool to get the schematic and necessary components for the power converter.  
-Thinking that the lights would have to last/work under summer's heat, I thght that mabe the best criteria for choosing a schematic is to have it as efficient as possible, while reasonable priced.  
-![Original Schematic](Images/PowerSchematic.png)  
-And the characteristics of this circuit look like this:  
-![Circuit Characteristics](Images/PowerCircuitCharacteristics.png)  
-I have also preserved the original BOM (produced by TI's web tool) [**here**](Hardware/BOM.csv).  
-***Also very important information is the datasheet of the chip used ([LMR33610](Hardware/LMR33610_Data_Sheet.pdf))**, preserved in the repo so I don't need to keep finding it.*
+Unlike other circuits I made, which were very simple and I could simply start putting the components together, for the light PCB I had to adjust a little bit and apply some of the principles I learned while developing software:  
+- decompose big problmes in smaller ones untill you get to problems that can be solved
+- be as rigurous as possible and make sure the smaller problems are solved correctly before assembling the solutions in the final board.  
+
+I am trying to increase the chances the board works as much as possible from the beginning, but also plan for the event of it not working anyway: the individual components that make up the logical modules should be placed as much as possible together to make debugging easier.  
+For the same purpose, consider leaving out pads for measuring voltages and currents if something does not work right.  
+So here is how I worked trough building the schematic for a single light (these would be my logical modules):
+1) Design the [power source](PowerSourceDesign.md)
+2) Design the [ESP circuit and the connection to the LED](ESPCircuitDesign.md)  
+
+The plan is to work on the design/schematic of each logical module separately and then [assemble everything](FinalBoardDesign.md) into the light controller PCB.
+

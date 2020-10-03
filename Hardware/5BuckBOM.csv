@@ -1,0 +1,9 @@
+﻿Part,Manufacturer,Part Number,Quantity,Price ($),Footprint (mm²),Description
+Rfbt,Vishay-Dale,CRCW040288K7FKED,1,0.01,3,Resistance: 88.7 kΩ  Tolerance: 1.0%  Power: 63 mW  
+Rfbb,Vishay-Dale,CRCW040222K1FKED,1,0.01,3,Resistance: 22.1 kΩ  Tolerance: 1.0%  Power: 63 mW  
+Cinx,MuRata,GRM188R71H104KA93D,1,0.02,4.68,Cap: 100 nF  Total Derated Cap: 87 nF  VDC: 50 V  ESR: 20 mΩ  Package: 0603  
+L1,TDK,SLF12575T-150M4R7-PF,1,0.77,210.25,L: 15 µH  DCR: 18.4 mΩ  IDC: 5 A  
+Cin,TDK,C1608X7R1V105K080AC,1,0.05,4.68,Cap: 1 µF  Total Derated Cap: 400 nF  VDC: 35 V  ESR: 5.52 mΩ  Package: 0603  
+Cboot,MuRata,GRM155R71C104KA88D,1,0.01,3,Cap: 100 nF  Total Derated Cap: 100 nF  VDC: 16 V  ESR: 1 mΩ  Package: 0402  
+U1,Texas Instruments,LMR50410XDBVR,1,0.45,14.82,
+Cout,MuRata,GRM31CR61C106KA88L,2,0.08,10.92,Cap: 10 µF  Total Derated Cap: 18 µF  VDC: 16 V  ESR: 3.62 mΩ  Package: 1206  
