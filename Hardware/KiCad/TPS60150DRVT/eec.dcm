@@ -1,7 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP TPS60150DRVT
-D TPS60150DRVT
-F http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPS60150&fileType=pdf
-$ENDCMP
-# end doc library
