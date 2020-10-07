@@ -9,4 +9,5 @@ So the one that I ended up choosing [**ESP32-WROOM-32E**](https://www.espressif.
   
 Next is to figure out which level shifter to use.  
 For this one I just have the price and pitch criterias, so all I did was to search [mouser.com](https://www.mouser.com/Search/Refine?Ntk=P_MarCom&Ntt=188668142&Ns=Pricing|0) for level shifters and then slect the cheapest one that has at least 0.65mm pitch.  
-Sorting by price, the cheapest level shifter that seems to do the trick is 74AVC1T45DW-7 ([datasheet](https://www.mouser.com/datasheet/2/115/74AVC1T45-1018717.pdf)), which is $0.26 at [mouser.com](https://www.mouser.com/ProductDetail/Diodes-Incorporated/74AVC1T45DW-7?qs=FxwYmY%252BLNTb6VB%2FaUjVImA%3D%3D).  
+Sorting by price, the cheapest level shifter that seems to do the trick (meaning it can drive 5V) is MC74VHCT32A ([datasheet](https://www.mouser.com/datasheet/2/308/MC74VHCT32A-D-1388011.pdf)), which is $0.274 at [mouser.com](https://www.mouser.com/ProductDetail/ON-Semiconductor/MC74VHCT32ADTR2G?qs=%252B9%2Fcbd0IE0QYdiY7xSjpig%3D%3D).  
+This is actually a set of 4 OR logical gates, so I will not use 3 of them, but I did not find anything cheaper that had fewer logical gates.  
