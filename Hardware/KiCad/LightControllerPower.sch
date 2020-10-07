@@ -287,133 +287,56 @@ Connection ~ 7250 2550
 $Comp
 L Device:C C5
 U 1 1 5F80591B
-P 4900 4950
-F 0 "C5" H 5050 4900 50  0000 C CNN
-F 1 "1uF" H 5100 5000 50  0000 C CNN
-F 2 "" H 4938 4800 50  0001 C CNN
-F 3 "~" H 4900 4950 50  0001 C CNN
-	1    4900 4950
+P 5050 5200
+F 0 "C5" H 5200 5150 50  0000 C CNN
+F 1 "1uF" H 5250 5250 50  0000 C CNN
+F 2 "" H 5088 5050 50  0001 C CNN
+F 3 "~" H 5050 5200 50  0001 C CNN
+	1    5050 5200
 	-1   0    0    1   
 $EndComp
 Text HLabel 8250 2550 2    50   Output ~ 0
 VCC(+3.3V)
-Text HLabel 8300 4700 2    50   Output ~ 0
+Text HLabel 8300 4950 2    50   Output ~ 0
 VCC(+5V)
 $Comp
 L Device:C C7
 U 1 1 5F8259B1
-P 6500 5000
-F 0 "C7" H 6615 5046 50  0000 L CNN
-F 1 "2.2uF" H 6615 4955 50  0000 L CNN
-F 2 "" H 6538 4850 50  0001 C CNN
-F 3 "~" H 6500 5000 50  0001 C CNN
-	1    6500 5000
+P 4200 4950
+F 0 "C7" H 4315 4996 50  0000 L CNN
+F 1 "2.2uF" H 4315 4905 50  0000 L CNN
+F 2 "" H 4238 4800 50  0001 C CNN
+F 3 "~" H 4200 4950 50  0001 C CNN
+	1    4200 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C9
 U 1 1 5F826501
-P 7100 5150
-F 0 "C9" H 7215 5196 50  0000 L CNN
-F 1 "2.2uF" H 7215 5105 50  0000 L CNN
-F 2 "" H 7138 5000 50  0001 C CNN
-F 3 "~" H 7100 5150 50  0001 C CNN
-	1    7100 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L eec:TPS60150DRVT U2
-U 1 1 5F7C9F35
-P 5350 4700
-F 0 "U2" H 5800 4950 50  0000 L CNN
-F 1 "TPS60150DRVT" H 5600 4850 50  0000 L CNN
-F 2 "Texas_Instruments-TPS60150DRVT-*" H 5350 5100 50  0001 L CNN
-F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPS60150&fileType=pdf" H 5350 5200 50  0001 L CNN
-F 4 "Manufacturer URL" H 5350 5300 50  0001 L CNN "Component Link 1 Description"
-F 5 "http://www.ti.com/" H 5350 5400 50  0001 L CNN "Component Link 1 URL"
-F 6 "Package Specification" H 5350 5500 50  0001 L CNN "Component Link 3 Description"
-F 7 "http://www.ti.com/litv/pdf/mpds216d" H 5350 5600 50  0001 L CNN "Component Link 3 URL"
-F 8 "SLVS888B" H 5350 5700 50  0001 L CNN "Datasheet Version"
-F 9 "70" H 5350 5800 50  0001 L CNN "Efficiency Typ"
-F 10 "0.14" H 5350 5900 50  0001 L CNN "Iout Max A"
-F 11 "4.7" H 5350 6000 50  0001 L CNN "Iq Typm A"
-F 12 "Surface Mount" H 5350 6100 50  0001 L CNN "Mounting Technology"
-F 13 "6-Pin Plastic Small Outline No-Lead, Body 2 x 2 mm, Pitch 0.65 mm" H 5350 6200 50  0001 L CNN "Package Description"
-F 14 "4206925/E" H 5350 6300 50  0001 L CNN "Package Version"
-F 15 "5" H 5350 6400 50  0001 L CNN "Preset VoutV"
-F 16 "1500" H 5350 6500 50  0001 L CNN "Switching FrequencyMaxkHz"
-F 17 "Boost" H 5350 6600 50  0001 L CNN "Topology"
-F 18 "5.5" H 5350 6700 50  0001 L CNN "Vin Max V"
-F 19 "2.7" H 5350 6800 50  0001 L CNN "Vin Min V"
-F 20 "5.2" H 5350 6900 50  0001 L CNN "Vout Max V"
-F 21 "4.8" H 5350 7000 50  0001 L CNN "Vout Min V"
-F 22 "IC" H 5350 7100 50  0001 L CNN "category"
-F 23 "ea5046267bf346a9" H 5350 7200 50  0001 L CNN "library id"
-F 24 "Texas Instruments" H 5350 7300 50  0001 L CNN "manufacturer"
-F 25 "DRV6-1600X1000TP" H 5350 7400 50  0001 L CNN "package"
-F 26 "Yes" H 5350 7500 50  0001 L CNN "rohs"
-F 27 "2705095C-3748-426F-86A6-ADF47F030912" H 5350 7600 50  0001 L CNN "vault revision"
-F 28 "yes" H 5350 7700 50  0001 L CNN "imported"
-	1    5350 4700
+P 7100 5300
+F 0 "C9" H 7215 5346 50  0000 L CNN
+F 1 "2.2uF" H 7215 5255 50  0000 L CNN
+F 2 "" H 7138 5150 50  0001 C CNN
+F 3 "~" H 7100 5300 50  0001 C CNN
+	1    7100 5300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4700 4200 6300 4200
-Wire Wire Line
-	4900 5100 5050 5100
-Wire Wire Line
-	5050 5100 5050 5000
-Wire Wire Line
-	5050 5000 5450 5000
-Wire Wire Line
-	5450 4900 5050 4900
-Wire Wire Line
-	5050 4900 5050 4800
-Wire Wire Line
-	5050 4800 4900 4800
-Wire Wire Line
-	6250 5200 6250 5700
-Connection ~ 6250 5700
-Wire Wire Line
-	6250 5700 3200 5700
-Wire Wire Line
-	6250 5700 6500 5700
-Wire Wire Line
-	5450 5200 4450 5200
-Wire Wire Line
-	4450 5200 4450 4350
-Wire Wire Line
-	4450 4350 5450 4350
 Wire Wire Line
 	7650 4350 7650 2550
 Connection ~ 7650 2550
 Wire Wire Line
 	7650 2550 7250 2550
 Wire Wire Line
-	5450 4700 5450 4350
-Connection ~ 5450 4350
+	6300 4950 7100 4950
 Wire Wire Line
-	5450 4350 6500 4350
-NoConn ~ 6250 5100
+	7100 5150 7100 4950
+Connection ~ 7100 4950
 Wire Wire Line
-	6500 4350 6500 4850
-Connection ~ 6500 4350
+	7100 4950 8300 4950
 Wire Wire Line
-	6500 4350 7650 4350
-Wire Wire Line
-	6500 5150 6500 5700
-Connection ~ 6500 5700
-Wire Wire Line
-	6500 5700 7100 5700
-Wire Wire Line
-	6250 4700 7100 4700
-Wire Wire Line
-	7100 5000 7100 4700
-Connection ~ 7100 4700
-Wire Wire Line
-	7100 4700 8300 4700
-Wire Wire Line
-	7100 5300 7100 5700
+	7100 5450 7100 5700
 Wire Wire Line
 	7650 2550 8250 2550
 $Comp
@@ -427,4 +350,55 @@ F 3 "~" H 1850 3750 50  0001 C CNN
 	1    1850 3750
 	1    0    0    -1  
 $EndComp
+$Comp
+L MyCustomPartsLibrary:TPS60150 U2
+U 1 1 5F7D421A
+P 5900 4950
+F 0 "U2" H 5900 5515 50  0000 C CNN
+F 1 "TPS60150" H 5900 5424 50  0000 C CNN
+F 2 "" H 5900 5400 50  0001 C CNN
+F 3 "" H 5900 5400 50  0001 C CNN
+	1    5900 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 5700 4200 5700
+Wire Wire Line
+	5500 5100 5400 5100
+Wire Wire Line
+	5400 5100 5400 5050
+Wire Wire Line
+	5400 5050 5050 5050
+Wire Wire Line
+	5500 5300 5400 5300
+Wire Wire Line
+	5400 5300 5400 5350
+Wire Wire Line
+	5400 5350 5050 5350
+Wire Wire Line
+	5900 5500 5900 5700
+Connection ~ 5900 5700
+Wire Wire Line
+	4200 4350 7650 4350
+Wire Wire Line
+	4200 4800 4200 4650
+Wire Wire Line
+	4200 5100 4200 5700
+Connection ~ 4200 5700
+Wire Wire Line
+	4200 5700 5900 5700
+Wire Wire Line
+	5500 4650 5250 4650
+Connection ~ 4200 4650
+Wire Wire Line
+	4200 4650 4200 4350
+Wire Wire Line
+	5500 4850 5250 4850
+Wire Wire Line
+	5250 4850 5250 4650
+Connection ~ 5250 4650
+Wire Wire Line
+	5250 4650 4200 4650
+Wire Wire Line
+	5900 5700 7100 5700
 $EndSCHEMATC

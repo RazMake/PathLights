@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name eec)(type Legacy)(uri ${KIPRJMOD}/TPS60150DRVT/eec.lib)(options "")(descr ""))
+  (lib (name MyCustomPartsLibrary)(type Legacy)(uri ${KIPRJMOD}/MyCustomPartsLibrary/MyCustomPartsLibrary.lib)(options "")(descr ""))
 )
