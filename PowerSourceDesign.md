@@ -58,7 +58,13 @@ A possible charge pump circuit is **TPS60150** ([data sheet](https://www.ti.com/
 The schema seems simple enough and with few components:  
 ![Sample Schematic](Images/ChargePumpSchematic.png)  
 This is cool because it does not use an inductor, which are tipically large components.  
-hIt does have a low output current (only 140mA), so I need to make sure this is enough for the level shifter. 
+It does have a low output current (only 140mA), so I need to make sure this is enough for the level shifter. 
 
 ## Conclusion
-TBD
+It looks like the most efficient schematic is Option 3 because it has fewer components in general.. just one inductor (which are large components).  
+This should work ok because the 5V part of the circuit is super simple (just the level shifter) and does not require a lot of current.  
+Until I find some reason why this would not work, I am going to continue designing the rest of the circuit using this power source: option 3.  
+I am uploading the [KiCad](https://kicad-pcb.org/download/) project with the whole schematic [here](Hardware/KiCad):  
+![Power Source Circuit](Images/PowerSourceCircuit.png)  
+I will keep updating the KiCad project as I fill in the rest of the components of this project.  
+Next step is to add the [ESP and the level shifter](ESPCircuitDesign.md).  
