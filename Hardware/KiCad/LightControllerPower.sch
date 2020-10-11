@@ -28,7 +28,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lmr33630.pdf" H 4150 3150 50  0001 C CNN
 	1    4150 3250
 	0    -1   -1   0   
 $EndComp
-Text HLabel 1500 5700 0    50   Input ~ 0
+Text HLabel 1500 5700 0    50   UnSpc ~ 0
 GND
 Text HLabel 1550 3750 0    50   Input ~ 0
 VCC(+12V)
@@ -351,7 +351,7 @@ F 3 "~" H 1850 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MyCustomPartsLibrary:TPS60150 U2
+L Controllers-rescue:TPS60150-MyCustomPartsLibrary-Controllers-rescue U2
 U 1 1 5F7D421A
 P 5900 4950
 F 0 "U2" H 5900 5515 50  0000 C CNN
