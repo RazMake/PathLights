@@ -8,6 +8,8 @@ I think the firmware will not need a lot of memory, so I don't need (I think) ad
 So the one that I ended up choosing [**ESP32-WROOM-32E**](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf) model (2.5$ at [mouser.com](https://www.mouser.com/ProductDetail/espressif/esp32-wroom-32em113eh3200ph3q0/?qs=vHuUswq2%252bsx8Xcp7bzmaHA%3D%3D&countrycode=US&currencycode=USD)).  
   
 Next is to figure out which level shifter to use.  
-For this one I just have the price and pitch criterias, so all I did was to search [mouser.com](https://www.mouser.com/Search/Refine?Ntk=P_MarCom&Ntt=188668142&Ns=Pricing|0) for level shifters and then slect the cheapest one that has at least 0.65mm pitch.  
-Sorting by price, the cheapest level shifter that seems to do the trick (meaning it can drive 5V) is MC74VHCT32A ([datasheet](https://www.mouser.com/datasheet/2/308/MC74VHCT32A-D-1388011.pdf)), which is $0.274 at [mouser.com](https://www.mouser.com/ProductDetail/ON-Semiconductor/MC74VHCT32ADTR2G?qs=%252B9%2Fcbd0IE0QYdiY7xSjpig%3D%3D).  
-This is actually a set of 4 OR logical gates, so I will not use 3 of them, but I did not find anything cheaper that had fewer logical gates.  
+For this one I just have the price and pitch criterias, so I think **NL17SZ17DBVT1G** ([**~$0.107**](https://www.mouser.com/ProductDetail/ON-Semiconductor/NL17SZ17DBVT1G?qs=%2Fha2pyFaduj2VK9p8pmj2Da5OB66Ri%252BlN4mGTeylnlYRtrdSl7dMTQ%3D%3D), [datasheet](https://www.mouser.com/datasheet/2/308/NL17SZ17_D-1813642.pdf))  
+
+## Conclusion
+Adding the ESP chip and the level shifter to the schematic, and hiding the complexity of the power source in a 'subsheet', the schema looks like this:  
+![Circuit diagram](Images/EspCircuitSchematic.png)
