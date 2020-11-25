@@ -28,33 +28,31 @@ Light Controller Board
 $Comp
 L Connector:Conn_01x02_Male J1
 U 1 1 5F6E6CC9
-P 9500 3350
-F 0 "J1" H 9400 3300 50  0000 L CNN
-F 1 "MAIN POWER" H 9000 3200 50  0000 L CNN
-F 2 "" H 9500 3350 50  0001 C CNN
-F 3 "~" H 9500 3350 50  0001 C CNN
-	1    9500 3350
+P 9750 3350
+F 0 "J1" H 9650 3300 50  0000 L CNN
+F 1 "MAIN POWER" H 9250 3200 50  0000 L CNN
+F 2 "" H 9750 3350 50  0001 C CNN
+F 3 "~" H 9750 3350 50  0001 C CNN
+	1    9750 3350
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9300 3350 9150 3350
+	9550 3350 9150 3350
 Wire Wire Line
 	9150 3350 9150 3650
 Wire Wire Line
-	9300 3250 9150 3250
+	9550 3250 9150 3250
 Wire Wire Line
 	9150 3250 9150 3050
-Wire Wire Line
-	9150 3050 8300 3050
 $Comp
 L power:GND #PWR0101
 U 1 1 5F7E8D38
-P 8750 5600
-F 0 "#PWR0101" H 8750 5350 50  0001 C CNN
-F 1 "GND" H 8755 5427 50  0000 C CNN
-F 2 "" H 8750 5600 50  0001 C CNN
-F 3 "" H 8750 5600 50  0001 C CNN
-	1    8750 5600
+P 9150 5600
+F 0 "#PWR0101" H 9150 5350 50  0001 C CNN
+F 1 "GND" H 9155 5427 50  0000 C CNN
+F 2 "" H 9150 5600 50  0001 C CNN
+F 3 "" H 9150 5600 50  0001 C CNN
+	1    9150 5600
 	1    0    0    -1  
 $EndComp
 Connection ~ 9150 3650
@@ -67,7 +65,7 @@ F 1 "PWR_FLAG" V 9150 3778 50  0000 L CNN
 F 2 "" H 9150 3650 50  0001 C CNN
 F 3 "~" H 9150 3650 50  0001 C CNN
 	1    9150 3650
-	-1   0    0    1   
+	0    1    1    0   
 $EndComp
 $Comp
 L MyCustomPartsLibrary:NL17SZ17DBVT1G U3
@@ -91,11 +89,6 @@ F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_
 	1    3850 3650
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	8300 3650 8750 3650
-Connection ~ 8750 3650
-Wire Wire Line
-	8750 3650 9150 3650
 $Comp
 L Connector:Conn_01x03_Male J2
 U 1 1 5F84614D
@@ -133,7 +126,7 @@ Wire Wire Line
 	5250 3650 5650 3650
 Connection ~ 5650 3650
 Wire Wire Line
-	8750 5600 5650 5600
+	9150 5600 8700 5600
 Wire Wire Line
 	5650 3650 5650 5600
 Wire Wire Line
@@ -189,9 +182,9 @@ NoConn ~ 4350 4250
 NoConn ~ 4050 4250
 NoConn ~ 2850 4250
 NoConn ~ 2950 4250
-Connection ~ 8750 5600
+Connection ~ 9150 5600
 Wire Wire Line
-	8750 5600 8750 3650
+	9150 5600 9150 3650
 $Comp
 L Device:C C11
 U 1 1 5F86A4CE
@@ -277,4 +270,71 @@ Wire Wire Line
 Wire Wire Line
 	2200 5600 2700 5600
 Connection ~ 5650 5600
+$Comp
+L Device:C C5
+U 1 1 5FBDA544
+P 1950 3200
+F 0 "C5" H 1750 3250 50  0000 L CNN
+F 1 "100nF" H 1600 3150 50  0000 L CNN
+F 2 "" H 1988 3050 50  0001 C CNN
+F 3 "~" H 1950 3200 50  0001 C CNN
+	1    1950 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5600 2200 5600
+Connection ~ 2200 5600
+Wire Wire Line
+	1950 1950 1950 3050
+Wire Wire Line
+	1950 3350 1950 5600
+$Comp
+L Device:C C9
+U 1 1 5FBE4BA9
+P 8700 4850
+F 0 "C9" H 8815 4896 50  0000 L CNN
+F 1 "100nF" H 8815 4805 50  0000 L CNN
+F 2 "" H 8738 4700 50  0001 C CNN
+F 3 "~" H 8700 4850 50  0001 C CNN
+	1    8700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C7
+U 1 1 5FBE70F4
+P 8500 4500
+F 0 "C7" H 8250 4550 50  0000 L CNN
+F 1 "10uF" H 8200 4450 50  0000 L CNN
+F 2 "" H 8538 4350 50  0001 C CNN
+F 3 "~" H 8500 4500 50  0001 C CNN
+	1    8500 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3650 9150 3650
+Wire Wire Line
+	8300 3050 8500 3050
+Wire Wire Line
+	8700 5000 8700 5600
+Connection ~ 8700 5600
+Wire Wire Line
+	8700 5600 8500 5600
+Wire Wire Line
+	8500 4650 8500 5600
+Connection ~ 8500 5600
+Wire Wire Line
+	8500 5600 5650 5600
+Wire Wire Line
+	8500 4350 8500 3050
+Connection ~ 8500 3050
+Wire Wire Line
+	8500 3050 8700 3050
+Wire Wire Line
+	8700 4700 8700 3050
+Connection ~ 8700 3050
+Wire Wire Line
+	8700 3050 9150 3050
+Wire Wire Line
+	1950 1950 3350 1950
+Connection ~ 3350 1950
 $EndSCHEMATC
