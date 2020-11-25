@@ -9,6 +9,9 @@ So the one that I ended up choosing [**ESP32-WROOM-32E**](https://www.espressif.
   
 Next is to figure out which level shifter to use.  
 For this one I just have the price and pitch criterias, so I think **NL17SZ17DBVT1G** ([**~$0.107**](https://www.mouser.com/ProductDetail/ON-Semiconductor/NL17SZ17DBVT1G?qs=%2Fha2pyFaduj2VK9p8pmj2Da5OB66Ri%252BlN4mGTeylnlYRtrdSl7dMTQ%3D%3D), [datasheet](https://www.mouser.com/datasheet/2/308/NL17SZ17_D-1813642.pdf))  
+  
+I also need to allow flashing the the the ESP wired as a recovery solution in case of any problem with the software.
+https://github.com/espressif/esptool/wiki/ESP32-Boot-Mode-Selection
 
 ## Conclusion
 Adding the ESP chip and the level shifter to the schematic, and hiding the complexity of the power source in a 'subsheet', the schema looks like this:  
