@@ -22,7 +22,7 @@ P 7050 3800
 F 0 "U3" H 6400 2750 50  0000 L CNN
 F 1 "ESP32-WROOM-32" H 5750 2650 50  0000 L CNN
 F 2 "RF_Module:ESP32-WROOM-32" H 7050 2300 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 6750 3850 50  0001 C CNN
+F 3 "https://github.com/RazMake/PathLights/blob/master/Hardware/Data%20Sheets/ESP32-WROOM-32E.pdf" H 6750 3850 50  0001 C CNN
 F 4 "2.5" H 7050 3800 50  0001 C CNN "Price"
 F 5 "https://www.mouser.com/ProductDetail/356-ESP32WRM32E132PH" H 7050 3800 50  0001 C CNN "Source"
 	1    7050 3800
@@ -331,7 +331,7 @@ P 8250 4300
 F 0 "U4" H 8450 4550 50  0000 R CNN
 F 1 "74LVC1G17GW" H 8850 4450 50  0000 R CNN
 F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 8250 4300 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC1G17.pdf" H 8250 4300 50  0001 C CNN
+F 3 "https://github.com/RazMake/PathLights/blob/master/Hardware/Data%20Sheets/74LVC1G17.pdf" H 8250 4300 50  0001 C CNN
 F 4 "https://www.mouser.com/ProductDetail/Nexperia/74LVC1G17GW125?qs=sGAEpiMZZMutXGli8Ay4kDE4J8KCiPsFxNiM2xNKic4%3D" H 8250 4300 50  0001 C CNN "Source"
 F 5 "0.155" H 8250 4300 50  0001 C CNN "Price"
 	1    8250 4300
