@@ -7,6 +7,7 @@ Not much of criteria for selecting the ESP chip **:-)**... I just wanted the che
 I think the firmware will not need a lot of memory, so I don't need (I think) additional flash.  
 So the one that I ended up choosing [**ESP32-WROOM-32E**](Hardware/Data%20Sheets/ESP32-WROOM-32E.pdf) model (2.5$ at [mouser.com](https://www.mouser.com/ProductDetail/espressif/esp32-wroom-32em113eh3200ph3q0/?qs=vHuUswq2%252bsx8Xcp7bzmaHA%3D%3D&countrycode=US&currencycode=USD)).  
   
+<<<<<<< HEAD
 I also need a level shifter so ESP32 (which 3.3V) can send data to the LEDs, which accept 5V data signal.
 I have settled on using a **74LVC1G17**([**~$0.155](https://www.mouser.com/ProductDetail/Nexperia/74LVC1G17GW125?qs=sGAEpiMZZMutXGli8Ay4kDE4J8KCiPsFxNiM2xNKic4%3D)), [datasheet](Hardware/Data%20Sheets/74LVC1G17.pdf)  
   
@@ -20,6 +21,13 @@ To flash new firmware on the board I will connect the corresponding pins on the 
 
 With the connection set like above reset the board (cut the power and then connect it back). This would put the board in flashing mode and you can write your new firmware.  
 ***Note:** Since the ESP is only checking the GPIO0 at boot, I can also connect the adapter after the ESP32 finished booting up to see logging information produced during normal runnin.*
+=======
+Next is to figure out which level shifter to use.  
+For this one I just have the price and pitch criterias, so I think **NL17SZ17DBVT1G** ([**~$0.107**](https://www.mouser.com/ProductDetail/ON-Semiconductor/NL17SZ17DBVT1G?qs=%2Fha2pyFaduj2VK9p8pmj2Da5OB66Ri%252BlN4mGTeylnlYRtrdSl7dMTQ%3D%3D), [datasheet](https://www.mouser.com/datasheet/2/308/NL17SZ17_D-1813642.pdf))  
+  
+I also need to allow flashing the the the ESP wired as a recovery solution in case of any problem with the software.
+https://github.com/espressif/esptool/wiki/ESP32-Boot-Mode-Selection
+>>>>>>> c01aa59909e961924c68bb60606b1642f67481bf
 
 ## Conclusion
 Adding the ESP chip and the level shifter to the schematic the schema looks like this:  
