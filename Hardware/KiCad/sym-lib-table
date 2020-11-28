@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name MyCustomPartsLibrary)(type Legacy)(uri ${KIPRJMOD}/MyCustomPartsLibrary/MyCustomPartsLibrary.lib)(options "")(descr ""))
+  (lib (name Controllers-rescue)(type Legacy)(uri ${KIPRJMOD}/Controllers-rescue.lib)(options "")(descr ""))
 )
