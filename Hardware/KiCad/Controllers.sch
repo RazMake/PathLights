@@ -16,7 +16,6 @@ $EndDescr
 Text Notes 7000 6850 0    177  ~ 35
 Light Controller Board
 $Comp
-<<<<<<< HEAD
 L RF_Module:ESP32-WROOM-32 U3
 U 1 1 5FD99F50
 P 7050 3800
@@ -41,36 +40,6 @@ F 2 "" H 8450 2900 50  0001 C CNN
 F 3 "~" H 8450 2900 50  0001 C CNN
 	1    8450 2900
 	-1   0    0    1   
-=======
-L Connector:Conn_01x02_Male J1
-U 1 1 5F6E6CC9
-P 9750 3350
-F 0 "J1" H 9650 3300 50  0000 L CNN
-F 1 "MAIN POWER" H 9250 3200 50  0000 L CNN
-F 2 "" H 9750 3350 50  0001 C CNN
-F 3 "~" H 9750 3350 50  0001 C CNN
-	1    9750 3350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9550 3350 9150 3350
-Wire Wire Line
-	9150 3350 9150 3650
-Wire Wire Line
-	9550 3250 9150 3250
-Wire Wire Line
-	9150 3250 9150 3050
-$Comp
-L power:GND #PWR0101
-U 1 1 5F7E8D38
-P 9150 5600
-F 0 "#PWR0101" H 9150 5350 50  0001 C CNN
-F 1 "GND" H 9155 5427 50  0000 C CNN
-F 2 "" H 9150 5600 50  0001 C CNN
-F 3 "" H 9150 5600 50  0001 C CNN
-	1    9150 5600
-	1    0    0    -1  
->>>>>>> c01aa59909e961924c68bb60606b1642f67481bf
 $EndComp
 Wire Wire Line
 	7650 2600 8200 2600
@@ -114,7 +83,6 @@ NoConn ~ 7650 3200
 NoConn ~ 7650 3100
 NoConn ~ 7650 3000
 $Comp
-<<<<<<< HEAD
 L Device:R R1
 U 1 1 5FE3F1DB
 P 6100 2250
@@ -124,17 +92,6 @@ F 2 "" V 6030 2250 50  0001 C CNN
 F 3 "~" H 6100 2250 50  0001 C CNN
 	1    6100 2250
 	-1   0    0    1   
-=======
-L power:PWR_FLAG #FLG0102
-U 1 1 5F7EB1DE
-P 9150 3650
-F 0 "#FLG0102" H 9150 3725 50  0001 C CNN
-F 1 "PWR_FLAG" V 9150 3778 50  0000 L CNN
-F 2 "" H 9150 3650 50  0001 C CNN
-F 3 "~" H 9150 3650 50  0001 C CNN
-	1    9150 3650
-	0    1    1    0   
->>>>>>> c01aa59909e961924c68bb60606b1642f67481bf
 $EndComp
 Wire Wire Line
 	6100 2100 6100 1850
@@ -162,24 +119,10 @@ F 3 "~" H 5250 2600 50  0001 C CNN
 	1    5250 2600
 	1    0    0    -1  
 $EndComp
-<<<<<<< HEAD
 Wire Wire Line
 	4700 2450 4700 2150
 Wire Wire Line
 	5250 2450 5250 2150
-=======
-$Comp
-L Connector:Conn_01x03_Male J2
-U 1 1 5F84614D
-P 5650 1150
-F 0 "J2" V 5712 1294 50  0000 L CNN
-F 1 "RGB LED" V 5803 1294 50  0000 L CNN
-F 2 "" H 5650 1150 50  0001 C CNN
-F 3 "~" H 5650 1150 50  0001 C CNN
-	1    5650 1150
-	0    1    1    0   
-$EndComp
->>>>>>> c01aa59909e961924c68bb60606b1642f67481bf
 Wire Wire Line
 	5250 3050 5000 3050
 Wire Wire Line
@@ -263,7 +206,6 @@ NoConn ~ 7650 2800
 Text Notes 7300 7100 0    67   Italic 0
 https://github.com/RazMake/PathLights/blob/master/ESPCircuitDesign.md
 Wire Wire Line
-<<<<<<< HEAD
 	4700 2150 5000 2150
 $Comp
 L power:GND #PWR0101
@@ -276,9 +218,6 @@ F 3 "" H 2150 2600 50  0001 C CNN
 	1    2150 2600
 	1    0    0    -1  
 $EndComp
-=======
-	9150 5600 8700 5600
->>>>>>> c01aa59909e961924c68bb60606b1642f67481bf
 Wire Wire Line
 	2150 2600 2150 2550
 Wire Wire Line
@@ -371,47 +310,9 @@ Wire Wire Line
 Wire Wire Line
 	8250 4400 8250 4700
 Wire Wire Line
-<<<<<<< HEAD
 	8650 4400 9000 4400
 Wire Wire Line
 	9000 4300 8500 4300
-=======
-	4350 1950 4350 3050
-NoConn ~ 4950 3050
-NoConn ~ 4850 3050
-NoConn ~ 4750 3050
-NoConn ~ 4650 3050
-NoConn ~ 4550 3050
-NoConn ~ 4450 3050
-NoConn ~ 4250 3050
-NoConn ~ 4150 3050
-NoConn ~ 4050 3050
-NoConn ~ 3950 3050
-NoConn ~ 3850 3050
-NoConn ~ 3750 3050
-NoConn ~ 3650 3050
-NoConn ~ 3550 3050
-NoConn ~ 3450 3050
-NoConn ~ 3350 3050
-NoConn ~ 3250 3050
-NoConn ~ 3150 3050
-NoConn ~ 3050 3050
-NoConn ~ 2950 3050
-NoConn ~ 2850 3050
-NoConn ~ 2750 3050
-NoConn ~ 2650 3050
-NoConn ~ 3850 4250
-NoConn ~ 3950 4250
-NoConn ~ 4150 4250
-NoConn ~ 4250 4250
-NoConn ~ 4350 4250
-NoConn ~ 4050 4250
-NoConn ~ 2850 4250
-NoConn ~ 2950 4250
-Connection ~ 9150 5600
-Wire Wire Line
-	9150 5600 9150 3650
->>>>>>> c01aa59909e961924c68bb60606b1642f67481bf
 $Comp
 L Connector:Conn_01x03_Male J2
 U 1 1 5FDC7205
@@ -469,77 +370,5 @@ Wire Wire Line
 Wire Wire Line
 	1900 2250 2100 2250
 Wire Wire Line
-<<<<<<< HEAD
 	2150 2550 1900 2550
-=======
-	2200 5600 2700 5600
-Connection ~ 5650 5600
-$Comp
-L Device:C C5
-U 1 1 5FBDA544
-P 1950 3200
-F 0 "C5" H 1750 3250 50  0000 L CNN
-F 1 "100nF" H 1600 3150 50  0000 L CNN
-F 2 "" H 1988 3050 50  0001 C CNN
-F 3 "~" H 1950 3200 50  0001 C CNN
-	1    1950 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1950 5600 2200 5600
-Connection ~ 2200 5600
-Wire Wire Line
-	1950 1950 1950 3050
-Wire Wire Line
-	1950 3350 1950 5600
-$Comp
-L Device:C C9
-U 1 1 5FBE4BA9
-P 8700 4850
-F 0 "C9" H 8815 4896 50  0000 L CNN
-F 1 "100nF" H 8815 4805 50  0000 L CNN
-F 2 "" H 8738 4700 50  0001 C CNN
-F 3 "~" H 8700 4850 50  0001 C CNN
-	1    8700 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C7
-U 1 1 5FBE70F4
-P 8500 4500
-F 0 "C7" H 8250 4550 50  0000 L CNN
-F 1 "10uF" H 8200 4450 50  0000 L CNN
-F 2 "" H 8538 4350 50  0001 C CNN
-F 3 "~" H 8500 4500 50  0001 C CNN
-	1    8500 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8300 3650 9150 3650
-Wire Wire Line
-	8300 3050 8500 3050
-Wire Wire Line
-	8700 5000 8700 5600
-Connection ~ 8700 5600
-Wire Wire Line
-	8700 5600 8500 5600
-Wire Wire Line
-	8500 4650 8500 5600
-Connection ~ 8500 5600
-Wire Wire Line
-	8500 5600 5650 5600
-Wire Wire Line
-	8500 4350 8500 3050
-Connection ~ 8500 3050
-Wire Wire Line
-	8500 3050 8700 3050
-Wire Wire Line
-	8700 4700 8700 3050
-Connection ~ 8700 3050
-Wire Wire Line
-	8700 3050 9150 3050
-Wire Wire Line
-	1950 1950 3350 1950
-Connection ~ 3350 1950
->>>>>>> c01aa59909e961924c68bb60606b1642f67481bf
 $EndSCHEMATC
